@@ -1,0 +1,23 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <div class="content slds-card slds-var-p-around_x-small">
+        <template if:false={fromparent}>
+        <div class="title-container">
+         <lightning-icon
+         icon-name="standard:people"
+         class="my-icon"
+         size="small"
+         alternative-text="Volunteer Sign Up"
+     >
+     </lightning-icon>
+     <p class="title">Volunteer Sign Up</p>
+          </div>
+        </template>
+        
+        <lightning-flow class="report-flow-bg" if:true={flowName} onstatuschange={handleStatusChange} flow-api-name={flowName}
+    >
+    </lightning-flow>
+
+</div>
+</template>
+<!-- sldsValidatorIgnore -->

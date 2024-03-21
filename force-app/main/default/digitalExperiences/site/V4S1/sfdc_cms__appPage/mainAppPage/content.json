@@ -1,0 +1,11 @@
+{
+  "type" : "sfdc_cms__appPage",
+  "title" : "main",
+  "contentBody" : {
+    "currentThemeId" : "Build_Your_Own_LWR",
+    "headMarkup" : "<meta charset=\"UTF-8\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=0.8\" />\n<title>Welcome to V4S Volunteer Site!</title>\n\n<link rel=\"stylesheet\" href=\"{ basePath }/assets/styles/styles.css?{ versionKey }\" />\n\n\n<!-- webruntime-branding-shared stylesheets -->\n<link rel=\"stylesheet\" href=\"{ basePath }/assets/styles/salesforce-lightning-design-system.min.css?{ versionKey }\" />\n<link rel=\"stylesheet\" href=\"{ basePath }/assets/styles/dxp-site-spacing-styling-hooks.min.css?{ versionKey }\" />\n<link rel=\"stylesheet\" href=\"{ basePath }/assets/styles/dxp-styling-hooks.min.css?{ versionKey }\" />\n<link rel=\"stylesheet\" href=\"{ basePath }/assets/styles/dxp-slds-extensions.min.css?{ versionKey }\" />\n\n\n<!-- webruntime-branding-shared stylesheets -->\n\n<style>\n    \n     \n\n    body{\n       --dxp-g-root: linear-gradient(45deg, #F9C449, #FDC094, #4ADEDE, #1CA7EC, #1F2F98) !important;\n\tbackground-size: 400% 400%;\n\tanimation: gradient 15s ease-in-out infinite alternate;\n\theight: 100vh;\n        \n        }\n    \n    @keyframes gradient {\n\t0% {\n\t\tbackground-position: 0% 50%;\n\t}\n\t50% {\n\t\tbackground-position: 100% 50%;\n\t}\n\t100% {\n\t\tbackground-position: 0% 50%;\n\t}\n}\n\n    .community_byo-scoped-header-and-footer__header-content{\n        background-color:rgb(239, 240, 242,0) !important;\n    }\n    \n    .community_byo-scoped-header-and-footer__footer-content\n    {\n        background-color:rgb(239, 240, 242,0) !important;\n    }\n    \n    .column-content.community_layout-column_column{\n        width:100% !important;\n    }\n</style>",
+    "isLockerServiceEnabled" : false,
+    "isRelaxedCSPLevel" : true,
+    "templateName" : "talon-template-byo"
+  }
+}

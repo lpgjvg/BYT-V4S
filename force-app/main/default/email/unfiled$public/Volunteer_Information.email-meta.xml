@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sent for new volunteer signups or when volunteer lookup is performed</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Volunteer Information</name>
+    <style>none</style>
+    <subject>Your Volunteering Information</subject>
+    <textOnly>Hi {!Contact.Name},
+
+Here is the link to click to access your Volunteer information dashboard:
+
+Your Volunteer Information
+
+By accessing this dashboard you can see your volunteering history, sign up for shifts, cancel shifts and report volunteer hours.
+
+We recommend you flag or star this email so you can find it easily for future use.
+
+Thank you for volunteering with Us.
+
+Regards,
+Admin Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

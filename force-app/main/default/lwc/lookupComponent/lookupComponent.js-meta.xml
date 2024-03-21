@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightning__FlowScreen</target>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen" category="Input">
+            <property name="helpText" label="Help Text" type="String" role="inputOnly" description="Help text to be displayed against the lookup" />
+            <property name="label" label="Lookup Label" type="String" role="inputOnly" description="Label to be displayed on top of the lookup" />
+            <property name="selectedIconName" label="Icon to be displayed" type="String"  role="inputOnly" description="Icons to be displayed against the search records" />
+            <property name="required" label="Is required?" type="Boolean" role="inputOnly"  description="Is the field is mandatory?" />
+            <property name="objectApiName" label="Object API Name" type="String"  role="inputOnly" description="API Name of the lookup object" />
+            <property name="fieldApiName" label="Field API Name" type="String"  role="inputOnly" description="API Name of the field to be returned from the lookup object" />
+            <property name="otherFieldApiName" label="Additional Field API Name" type="String"  role="inputOnly" description="API Name of the additional field from lookup object" />
+            <property name="objectLabel" label="Object Label" type="String"  role="inputOnly" description="Object name to be displayed in the search results" />
+            <property name="parentRecordId" label="Parent Record Id" type="String"  role="inputOnly" description="Id of parent record to establish dependant lookup" />
+            <property name="parentFieldApiName" label="Parent Field API Name" type="String"  role="inputOnly" description="Field API Name of parent  to establish dependant lookup" />
+            <!--Output to indicate the auto navigate component triggered-->
+            <property name="selectedRecordId" type="String"/>
+            <property name="recId" type="String" role="outputOnly" /> 
+            </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

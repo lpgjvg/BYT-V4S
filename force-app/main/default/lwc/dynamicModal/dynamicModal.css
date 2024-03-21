@@ -1,0 +1,9 @@
+.modal-bg
+{
+    
+/*--slds-c-backdrop-color-background:	rgba(8, 7, 7, 0.6);*/
+--slds-c-modal-content-color-background: none;
+/*--slds-c-modal-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);*/
+/*--slds-c-modal-sizing-border: 2px solid rgba(255, 255, 255, 0.3);*/
+   
+}

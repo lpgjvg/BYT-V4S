@@ -1,0 +1,111 @@
+<template>
+    <div class={flexipageRegionWidth}>
+        <div class="content slds-card slds-var-p-around_x-small mob_content">
+            <div class="title-container">
+                <lightning-icon icon-name="standard:people" class="my-icon" size="small"
+                    alternative-text="Volunteer Details">
+                </lightning-icon>
+                <p class="title">{dashboardHeader}</p>
+            </div>
+            
+            <template lwc:if={contactexists}>
+                <lightning-tabset active-tab-value="one">
+                    <lightning-tab label={tabOne} onactive={handleActive} value="one">
+                        <div>
+                            <div class="tracker_container">
+
+                                <div class="contactinfo">
+                                    <c-contact-Info contactid={contactid} fromparent={fromparent}></c-contact-Info>
+                                </div>
+
+                                <div class="hourschart">
+                                    <c-volunteer-Hours-Chart contactid={contactid}
+                                        fromparent={fromparent}></c-volunteer-Hours-Chart>
+                                </div>
+
+                                <div class="ratinginfo">
+                                    <c-volunteer-Rating-Info contactid={contactid}
+                                        fromparent={fromparent} ></c-volunteer-Rating-Info>
+                                </div>
+                            </div>
+                        </div>
+
+                    </lightning-tab>
+                    <lightning-tab label={tabTwo} onactive={handleActive} value="two">
+                        <div>
+                            <template lwc:if={contactid}>
+                                <c-volunteer-Shift-Info contactid={contactid}
+                                    fromparent={fromparent}></c-volunteer-Shift-Info>
+                            </template>
+                        </div>
+                    </lightning-tab>
+                    <lightning-tab label={tabThree} value="three">
+                        <div>
+                            <template lwc:if={contactid}>
+                                <c-volunteer-Shift-History-Info contactid={contactid}
+                                    fromparent={fromparent}></c-volunteer-Shift-History-Info>
+                            </template>
+                        </div>
+                    </lightning-tab>
+                    <lightning-tab label={tabFour} value="four">
+                        <div>
+                            <template lwc:if={contactid}>
+                                <c-full-Calendar contactid={contactid} fromparent={fromparent} object-name={objectName}
+                                    title-field={titleField} start-field={startField} end-field={endField}
+                                    color-field={colorField} additional-filter={additionalFilter}
+                                    aspect-ratio={aspectRatio} all-day-field={allDayField} height={height}
+                                    week-view={weekView} day-view={dayView} list-view={listView} allowpastshifts={allowpastshifts} months-to-show={monthsToShow}></c-full-Calendar>
+                            </template>
+                        </div>
+                    </lightning-tab>
+                    <lightning-tab label={tabFive} value="five">
+                        
+                                    <template lwc:if={contactid}>
+                                        <c-volunteer-Report-Hours contactid={contactid} fromparent={fromparent}
+                                            flow-name={flowName}></c-volunteer-Report-Hours>
+                                    </template>
+                              
+                          
+                    </lightning-tab>
+                    <lightning-tab label={tabSix} value="six">
+                        
+                                <template if:true={contactid}>
+                                    <c-look-Up-Wrapper contactid={contactid} ></c-look-Up-Wrapper>
+                            </template>
+                    </lightning-tab>
+                    
+
+                </lightning-tabset>
+            </template>
+            <template lwc:else>
+                <template lwc:if={isLoaded}>
+                <template lwc:if={contactid}>
+                    <p class="signupinfo">We couldn't find a matching record. Kindly conduct a volunteer lookup to
+                        reissue your access details or proceed with registration as a new user if you are new to the
+                        system.</p>
+                </template>
+                <template lwc:else>
+                    <p class="signupinfo">Please enter your name and email to access a link to your personal volunteer portal.</p>
+                </template>
+                <lightning-tabset active-tab-value="one">
+                    <lightning-tab label={tabSeven} value="one">
+                        <div>
+                            <c-volunteer-Contact-Lookup fromparent={fromparent}
+                                flow-name={lookupflowName}></c-volunteer-Contact-Lookup>
+                        </div>
+                    </lightning-tab>
+                    <lightning-tab label={tabEight} value="two">
+                        <div>
+                            <c-volunteer-Sign-Up fromparent={fromparent}
+                                flow-name={signupflowName}></c-volunteer-Sign-Up>
+                        </div>
+                    </lightning-tab>
+                </lightning-tabset>
+            </template>
+            </template>
+        
+
+
+        </div>
+    </div>
+</template>

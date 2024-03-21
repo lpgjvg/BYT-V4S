@@ -1,0 +1,24 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <div class="content slds-card slds-var-p-around_x-small">
+        <template if:false={fromparent}>
+        <div class="title-container">
+         <lightning-icon
+         icon-name="standard:shift"
+         class="my-icon"
+         size="small"
+         alternative-text="Volunteer Shift"
+     >
+     </lightning-icon>
+     <p class="title">Report Volunteer Hours</p>
+          </div>
+        </template>
+<template if:true={contactid}>
+        <lightning-flow class="report-flow-bg" if:true={flowName} onstatuschange={handleStatusChange} flow-api-name={flowName}
+        flow-input-variables={inputVariables}
+    >
+    </lightning-flow>
+</template>
+</div>
+</template>
+<!-- sldsValidatorIgnore -->

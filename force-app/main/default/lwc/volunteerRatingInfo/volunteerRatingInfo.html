@@ -1,0 +1,48 @@
+<template>
+    <lightning-spinner if:true={isLoading}></lightning-spinner>
+    <div if:false={isLoading}>
+    <template lwc:if={contact}>
+    <!--<template lwc:if={wiredcontact.data.length}>-->
+        <div class="content slds-card slds-var-p-around_x-small">
+            <div class="title-container">
+            <lightning-icon
+             icon-name="standard:reward"
+             class="my-icon"
+             size="small"
+             alternative-text="Ranking Info"
+         >
+         </lightning-icon>
+         <p class="title">Volunteer Rank Info</p>
+     </div>
+        <div class="list-content">
+            
+            <dl class="my-dl">
+                <template lwc:if={ranks}>
+                <dt class="my-dt">
+                    Top {ranks}% last 12 months
+            </dt>
+                <dd class="my-dd">How You Rank</dd>
+            </template>
+                <dt class="my-dt">
+                    {volunteer_hours}
+            </dt>
+                <dd class="my-dd">Volunteer Hours</dd>
+                <dt class="my-dt">{volunteer_first_date}</dt>
+                <dd class="my-dd">First Volunteer Date</dd>
+                <dt class="my-dt">{volunteer_last_date}</dt>
+                <dd class="my-dd">Last Volunteer Date</dd>
+                <template lwc:if={dummy}>
+                <dt class="my-dt">{volunteer_web_date}</dt>
+                <dd class="my-dd">Web Signup Date</dd>
+                </template>
+              </dl>
+              </div>
+            </div>
+    </template>
+    <template lwc:else>
+               
+                 <p>There are no Info to Display</p>
+            <!--   </template>-->
+            </template>
+        </div>
+</template>

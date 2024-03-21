@@ -1,0 +1,7 @@
+<template>
+    <lightning-card title="Volunteer Hours Chart" icon-name="utility:chart">
+        <template if:true={chartConfiguration}>
+            <c-chart-Builder chart-config={chartConfiguration}></c-chart-Builder>
+        </template>
+</lightning-card>
+</template>

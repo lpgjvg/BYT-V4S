@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html style="overflow-y: hidden;">
+<head>
+	<title></title>
+	<meta content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initialscale=1.0"><meta content="IE=edge">
+	<style type="text/css">@media screen and (max-width: 480px) {slot[style] {margin-right: 0 !important;}.columnDiv {margin-right: 0 !important;}}@media screen and (min-width: 480px) {slot[style] {margin-bottom: 0 !important;}.columnDiv {margin-bottom: 0 !important;}}
+	</style>
+	<style type="text/css">@media screen and (max-width: 480px) {.contentbuilderBaseColumnRow .columnCell {display:inline-block;width:100%}}
+	</style>
+	<style type="text/css">.contentpageDefaultEmailTemplatePageTemplate .contentRoot {width: 600px;}@media only screen and (max-width: 480px) {.contentpageDefaultEmailTemplatePageTemplate .contentRoot {width: 320px;}}
+	</style>
+</head>
+<body style="height: auto; min-height: auto;">
+<table cellpadding="0" cellspacing="0" class="contentpageDefaultEmailTemplatePageTemplate" id="contentpage_emailTemplateBodyContent" style="background-color: #E9EAEC;" width="100%">
+	<tbody>
+		<tr>
+			<td align="center" width="100%">
+			<table cellpadding="0" cellspacing="0" class="contentRoot" style="background-color: #FFFFFF;" width="600">
+				<tbody>
+					<tr>
+						<td style="padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px;">
+						<table cellpadding="0" cellspacing="0" class="contentbuilderBaseColumnRow" style="align-items: flex-start; width: 100%; background-color:#FAF8F8;" width="100%">
+							<tbody>
+								<tr valign="top">
+									<td class="columnCell" style="vertical-align: top;display: inline-block; float:left" width="8.33%">
+									<div class="columnDiv" style="margin-right: 4px;margin-bottom: 5px;">
+									<table cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; word-break:break-word;">
+									</table>
+									</div>
+									</td>
+									<td class="columnCell" style="vertical-align: top;display: inline-block; float:left" width="83.33%">
+									<div class="columnDiv" style="margin-right: 4px;margin-bottom: 5px;">
+									<table cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; word-break:break-word;">
+										<tbody>
+											<tr>
+												<td>
+												<table cellpadding="0" cellspacing="0" id="contentregion" style="font-size:14px; width: 100%; border-collapse: collapse; word-break: break-word;">
+													<tbody>
+														<tr>
+															<td class="contentbuilder-html" style="padding: 0;">
+															<p>Hi {!Contact.Name},&nbsp;</p>
+
+															<p>Here is the link to click to access your Volunteer information dashboard:</p>
+															<a href="https://lwc-4f-dev-ed.develop.my.site.com/volunteers/?contactid={!Contact.Id}" style="color:darkblue;font-size:25px;display:block;text-align:center">Your Volunteer Information</a>
+
+															<p>By accessing this dashboard you can see your volunteering history, sign up for shifts, cancel shifts and report volunteer hours.</p>
+
+															<p>We recommend you flag or star this email so you can find it easily for future use.</p>
+
+															<p>Thank you for volunteering with Us.</p>
+
+															<p>Regards,<br />
+															Admin Team</p>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</div>
+									</td>
+									<td class="columnCell" style="vertical-align: top;display: inline-block; float:left" width="8.33%">
+									<div class="columnDiv" style="margin-right: 4px;margin-bottom: 5px;">
+									<table cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; word-break:break-word;">
+									</table>
+									</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,61 @@
+.content {
+    --slds-c-card-color-background: rgba(255, 255, 255, 0.43);
+    --slds-c-card-shadow: 0 0px 5px rgba(0, 0, 0, 0.53);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    padding: 0.5rem;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.title{
+    font-weight: 600;
+    color:black;
+    font-size:xx-large;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family : var(--dxp-s-text-heading-extra-large-font-family, Salesforce Sans);
+}
+
+.logo{
+max-width: 80%;
+height:auto;
+/*padding-right:10px;*/
+margin-top: auto;
+margin-bottom: auto;
+margin-right: auto;
+margin-left: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .content {
+         --slds-c-card-color-background: rgba(255, 255, 255, 0.43);
+    --slds-c-card-shadow: 0 0px 5px rgba(0, 0, 0, 0.53);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    padding: 0.5rem;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+
+    .logo{
+      width: 100%;
+      height:auto;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-right: auto;
+      margin-left: auto;
+      }
+
+      .title{
+        font-weight: 600;
+        color:black;
+        font-size:x-large;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+  }

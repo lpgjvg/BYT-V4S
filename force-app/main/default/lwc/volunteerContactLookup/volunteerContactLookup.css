@@ -1,0 +1,29 @@
+.content {
+    --slds-c-card-color-background: rgba(255, 255, 255, 0.13);
+    --slds-c-card-shadow: 0 0px 5px rgba(0, 0, 0, 0.53);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.title-container
+{
+    display:inline-block;
+    padding-bottom: 10px;
+}
+.title
+{
+    font-size:medium;
+    padding-left:10px;
+    vertical-align: bottom;
+    font-weight: 700;
+    display:inline-block
+}
+.my-icon
+{
+    --sds-c-icon-color-background: darkolivegreen;
+    --slds-c-icon-color-foreground: white;
+
+}

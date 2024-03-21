@@ -1,0 +1,41 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <div class="content slds-card slds-var-p-around_x-small">
+        <template if:false={fromparent}>
+       <div class="title-container">
+        <lightning-icon
+        icon-name="standard:shift"
+        class="my-icon"
+        size="small"
+        alternative-text="Your Recent Volunteer History"
+    >
+    </lightning-icon>
+    <p class="title">Your Recent Volunteer History</p>
+</div>
+</template>
+              <template lwc:if={shifts}>
+                <template lwc:if={totalRecords}>
+                <lightning-datatable
+                    key-field="Id"
+                    data={shifts}
+                    columns={columns}
+                    hide-checkbox-column="true"
+                    >
+                </lightning-datatable>
+                <div>
+                    <template if:true={totalRecords}>
+                        <c-pagination totalrecords={totalRecords} page-size={pageSize} onpagination={handlePagination}></c-pagination>
+                    </template>
+                </div>
+            </template>
+            <template lwc:else>
+                <p>No Shifts found</p>
+            </template>
+            </template>
+            <template if:true={error}>
+                <p>Error retrieving Shifts</p>
+            </template>
+            
+        </div>
+</template>
+<!-- sldsValidatorIgnore -->

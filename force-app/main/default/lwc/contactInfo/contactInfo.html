@@ -1,0 +1,75 @@
+<template>
+    <template lwc:if={contact}>
+    <!--<template lwc:if={wiredcontact.data.length}>-->
+        <div class="content slds-card slds-var-p-around_x-small">
+           
+            <div class="title-container">
+             <lightning-icon
+             icon-name="standard:record_update"
+             class="my-icon-right"
+             size="small"
+             onclick={handleClick}
+             alternative-text="Update Record"
+         >
+         </lightning-icon>
+         <lightning-icon
+             icon-name="standard:contact"
+             class="my-icon"
+             size="small"
+             alternative-text="Contact Info"
+         >
+         </lightning-icon>
+         <p class="title">Volunteer Info</p>
+     </div>
+    
+        <div class="list-content">
+            <p class="vname">{name}</p>
+            <dl class="my-dl">
+                <dt class="my-dt">
+                    <lightning-icon
+                    icon-name="standard:voice_call"
+                    class="my-icon"
+                    size="small"
+                    alternative-text="Phone"
+                ></lightning-icon>
+            </dt>
+                <dd class="my-dd">{phone}</dd>
+                <dt class="my-dt"><lightning-icon
+                    icon-name="custom:custom28"
+                    class="my-icon"
+                    size="small"
+                    alternative-text="Mobile"
+                ></lightning-icon>
+            </dt>
+                <dd class="my-dd">{mobile}</dd>
+                <dt class="my-dt"><lightning-icon
+                    icon-name="standard:email"
+                    class="my-icon"
+                    size="small"
+                    alternative-text="Email"
+                ></lightning-icon></dt>
+                <dd class="my-dd">{email}</dd>
+                <dt class="my-dt"><lightning-icon
+                    icon-name="standard:shift_preference"
+                    class="my-icon"
+                    size="small"
+                    alternative-text="Availability"
+                ></lightning-icon></dt>
+                <dd class="my-dd">{availability}</dd>
+                <dt class="my-dt"><lightning-icon
+                    icon-name="standard:skill"
+                    class="my-icon"
+                    size="small"
+                    alternative-text="Skills"
+                ></lightning-icon></dt>
+                <dd class="my-dd">{skills}</dd>
+              </dl>
+              </div>
+            </div>
+    </template>
+   <!--    <template lwc:else>
+               
+                 <p>There are no Info to Display</p>
+            
+            </template> -->
+</template>

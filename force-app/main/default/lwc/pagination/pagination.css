@@ -1,0 +1,47 @@
+.pages
+{
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 2.1rem;
+    max-height: 2.8rem;
+    padding: 22px
+}
+
+.pagination
+{
+    display:flex;
+    justify-content: flex-end;
+    padding-top: 6px;
+}
+
+
+lightning-button{
+    --slds-c-button-radius-border: 50%;
+    --slds-c-button-neutral-spacing-inline-end: 8px;
+    --slds-c-button-neutral-spacing-inline-start: 8px;
+    --slds-c-button-text-color: #000;
+    --slds-c-button-line-height: 22px;
+    --slds-c-button-neutral-color-background: none;
+    --slds-c-button-neutral-color-border-hover : none;
+    padding:1px;
+    font-size: smaller;
+    
+}
+
+.currentpage{
+    --slds-c-button-neutral-color-background : white;
+    --slds-c-button-neutral-color-background-active : #white;
+    --slds-c-button-text-color: #000;
+    --slds-c-button-neutral-color-border-hover : none;
+    
+}
+
+.info{
+    color: #000;
+    padding-top: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    font-family: inherit;
+    text-align: left;
+}

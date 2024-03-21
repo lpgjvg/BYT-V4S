@@ -1,0 +1,61 @@
+.content {
+    --slds-c-card-color-background: rgba(255, 255, 255, 0.43);
+    --slds-c-card-shadow: 0 0px 5px rgba(0, 0, 0, 0.53);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    padding: 0.5rem;
+    border-radius: 8px;
+    overflow: overlay;
+}
+
+.title-container
+{
+    display:inline;
+    padding-bottom: 10px;
+}
+.title
+{
+    font-size:medium;
+    padding-left:10px;
+    vertical-align: bottom;
+    font-weight: 700;
+    display:inline-block
+}
+.list-content
+{
+   /* margin-left:5%;
+    margin-bottom:5%;
+    margin-top:5%;
+    display: inline;*/
+}
+.my-dl{
+    display: grid;
+    text-align: center;
+    margin-top: 2%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+.my-dd{
+    /*padding-left: 10px;*/
+    margin: 0;
+   /* padding: 4px; */
+    min-height: 1em;
+    
+}
+.my-dt{
+   /* padding: 2px 4px;*/
+    font-weight: 700;
+    font-size: unset;
+    grid-row-start: 1;
+}
+.my-dd::after{
+    content: '\a';
+    white-space: pre;
+}
+.my-icon
+{
+    --sds-c-icon-color-background: var(--dxp-g-brand,darkolivegreen);
+    --slds-c-icon-color-foreground: white;
+
+}

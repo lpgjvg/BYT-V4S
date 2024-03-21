@@ -1,0 +1,35 @@
+.adhoc_bg
+{
+    display:none;
+}
+
+.adhoc_submit
+{
+    --slds-c-button-brand-color-background:var(--dxp-g-brand,darkolivegreen);
+    padding-top:5px;
+    padding-bottom:5px;
+}
+.page_align
+{
+    width:50%;
+    margin-left:25%;
+    margin-top: 3%;
+    margin-bottom: 15%;
+}
+.success_mes
+{
+    font-weight: 500;
+    color: darkgreen;
+    text-align: center;
+}
+.error_mes
+{
+    font-weight: 500;
+    color: darkred;
+    text-align: center;
+}
+.spinner
+{
+
+}
+

@@ -1,0 +1,69 @@
+.content {
+    --slds-c-card-color-background: rgba(255, 255, 255, 0.43);
+    --slds-c-card-shadow: 0 0px 5px rgba(0, 0, 0, 0.53);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.title-container
+{
+    display:inline;
+    padding-bottom: 10px;
+}
+.title
+{
+    font-size:medium;
+    padding-left:10px;
+    vertical-align: bottom;
+    font-weight: 700;
+    display:inline-block
+}
+.list-content
+{
+    margin-left:5%;
+    margin-bottom:15%;
+}
+.vname{
+
+    font-size:24px;
+    padding-top: 20px;
+    padding-bottom:20px;
+    /*vertical-align: bottom;*/
+    font-weight: 700;
+    color: var(--dxp-g-brand,darkolivegreen);
+    /*display:inline-block*/
+}
+.my-dl{
+    display: grid;
+    grid-template-columns: max-content auto;
+    row-gap:10px;
+}
+.my-dd{
+    /*padding-left: 10px;*/
+    margin-left: 5px;
+    font-weight: 600;
+    word-break: break-word;
+}
+.my-dt{
+    display: inline-block;
+  margin: 0 5px 5px 0;
+}
+.my-dd::after{
+    content: '\a';
+    white-space: pre;
+}
+.my-icon
+{
+    --sds-c-icon-color-background: var(--dxp-g-brand,darkolivegreen);
+    --slds-c-icon-color-foreground: white;
+
+}
+.my-icon-right
+{
+    --sds-c-icon-color-background: var(--dxp-g-destructive, indianred);
+    float:right;
+    display: inline;
+}

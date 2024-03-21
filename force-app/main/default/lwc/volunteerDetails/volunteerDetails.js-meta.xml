@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__AppPage,lightning__RecordPage,lightning__HomePage,lightningCommunity__Default">
+            
+            <property name="contactid" type="String" label="Contact ID" description="The value should be {!contactid}." />
+            <property name="dashboardHeader" type="String" label="Dashboard Header" description="The Header value to be displayed for the dashboard." default="Volunteer Dashboard"/>
+            <property name="tabOne" type="String" label="Tab one Header" description="The Header value to be displayed for Tab one." default="How are you tracking?"/>
+            <property name="tabTwo" type="String" label="Tab two Header" description="The Header value to be displayed for Tab two." default="Scheduled Shift" />
+            <property name="tabThree" type="String" label="Tab three Header" description="The Header value to be displayed for Tab three." default="Shift History" />
+            <property name="tabFour" type="String" label="Tab four Header" description="The Header value to be displayed for Tab four." default="Shift Calendar" />
+            <property name="tabFive" type="String" label="Tab five Header" description="The Header value to be displayed for Tab five." default="Complete Hours" />
+            <property name="tabSix" type="String" label="Adhoc Reporting" description="The Header label for Adhoc Time Reporting Tab." default="Adhoc Reporting" />
+            <property name="tabSeven" type="String" label="Person Lookup Header" description="The Header value to be displayed for Person Lookup Header Tab." default="Volunteer Lookup" />
+            <property name="tabEight" type="String" label="Signup Header" description="The Header value to be displayed for Signup Header Tab." default="Sign Up" />        
+            <property name="allowpastshifts" type="Boolean" label="Allow Sign up of past shifts?" description="Allow volunteers to sign up past shifts." default="true" />        
+            <property name="monthsToShow" label="Months to display" description="This parameter determines the duration for which the shifts will be displayed in terms of the number of months." type="Integer" default="1"></property>
+            </targetConfig>
+        </targetConfigs>
+</LightningComponentBundle>

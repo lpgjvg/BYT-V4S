@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>unfiled$public/Volunteer_Information</members>
+		<name>EmailTemplate</name>
+	</types>
+	<types>
+		<members>Contact.Volunteer_Contact_Lookup</members>
+		<name>WorkflowAlert</name>
+	</types>
+	<types>
+		<members>V4S</members>
+		<name>CustomSite</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>NavigationMenu</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>Network</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+<members>GW_Volunteers__Volunteer_Shift__c.Calendar_Shift_Color__c</members>
+<members>GW_Volunteers__Volunteer_Shift__c.Shift_End_Date_Time__c</members>
+<members>GW_Volunteers__Volunteer_Shift__c.Job_Name__c</members>
+<name>CustomField</name>
+</types>
+<types>
+		<members>*</members>
+		<name>ApexPage</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>NetworkBranding</name>
+	</types>
+<types>
+        <members>*</members>
+        <name>DigitalExperienceBundle</name>
+    </types>
+<types>
+        <members>*</members>
+        <name>DigitalExperienceConfig</name>
+    </types>
+	<types>
+		<members>V4S Profile</members>
+		<name>Profile</name>
+	</types>
+	<types>
+		<members>V4S_Profile_profilePasswordPolicy1688354845572</members>
+		<name>ProfilePasswordPolicy</name>
+	</types>
+	<types>
+		<members>V4S_Profile_profileSessionSetting1688354845674</members>
+		<name>ProfileSessionSetting</name>
+	</types>
+	<version>58.0</version>
+</Package>

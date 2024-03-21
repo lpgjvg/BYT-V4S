@@ -1,0 +1,47 @@
+<template>
+    <div class="page_align">
+        <c-lookup-Component label="Select Volunteer Job" selected-icon-name="standard:job_profile"
+            object-label="Volunteer Shift" object-api-name="GW_Volunteers__Volunteer_Job__c" field-api-name="Name"
+            other-field-api-name="GW_Volunteers__Location_City__c" help-text="Search for available Volunteer Jobs"
+            onvalueselected={handleValueSelectedOnAccount}
+            onvaluedeselected={handleValueDeselectedOnAccount}></c-lookup-Component>
+        <template if:true={hasChildShifts}>
+            <c-lookup-Component  label="Select Volunteer Shift"
+                selected-icon-name="standard:shift" object-label="Volunteer Shift"
+                object-api-name="GW_Volunteers__Volunteer_Shift__c" field-api-name="GW_Volunteers__Start_Date_Time__c"
+                other-field-api-name="Job_Name__c" parent-record-id={parentAccountSelectedRecord.id}
+                parent-field-api-name="GW_Volunteers__Volunteer_Job__c"
+                help-text="Select the shifts for the above Job"
+                onvalueselected={handleValueSelectedOnContact}
+                onvaluedeselected={handleValueDeselectedOnContact}></c-lookup-Component>
+        </template>
+        <template if:true={parentAccountSelectedRecord}>
+            <template if:false={hasChildShifts}>
+                <lightning-input if:false={parentContactSelectedRecord} type="date" field-level-help="Select the date for which you are recording your hours."
+                    value={dateValue} label="Shift Date" onchange={handleDateChange}></lightning-input>
+            </template>
+        </template>
+        <lightning-input if:true={parentAccountSelectedRecord} type="number"
+            field-level-help="Enter the number of hours you have worked" value={hoursValue} label="Hours"
+            onchange={handleHoursChange} step="0.50" max="10" required></lightning-input>
+        <template if:true={userClicked}>
+            <lightning-flow class="adhoc_bg" flow-api-name='Report_Adhoc_Hours' flow-input-variables={inputVariables}
+                onstatuschange={handleStatusChange}>
+            </lightning-flow>
+        </template>
+        <lightning-button variant="brand" label="Submit" title="Non-primary action" onclick={handleClick}
+            disabled={isButtonDisabled}
+            class="adhoc_submit slds-var-m-left_x-small slds-align_absolute-center"></lightning-button>
+        <template if:true={spinner}>
+            <lightning-spinner class="spinner" alternative-text="Loading" size="medium"></lightning-spinner>
+        </template>
+        <template if:false={isButtonDisabled}>
+            <template if:true={success}>
+                <p class="success_mes">Record saved successfully!</p>
+            </template>
+            <template if:true={error}>
+                <p class="error-mes">An error occurred while saving the record.</p>
+            </template>
+        </template>
+    </div>
+</template>

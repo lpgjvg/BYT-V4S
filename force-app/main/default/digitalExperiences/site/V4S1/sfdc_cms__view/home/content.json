@@ -1,0 +1,83 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Home",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "dxpStyle" : {
+              "isVisible" : true
+            },
+            "sectionConfig" : "{\"UUID\":\"0bce6949-c358-48bd-8566-c0ba4521fd19\",\"columns\":[{\"UUID\":\"8a27768d-b64b-47ee-8701-9bc23974d031\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"1\",\"seedComponents\":null},{\"UUID\":\"de78a324-a7d3-4fa7-be89-02dbedf8d134\",\"columnName\":\"Column 2\",\"columnKey\":\"50dbf\",\"columnWidth\":\"10\",\"seedComponents\":[]},{\"UUID\":\"675c3b17-d9c4-4a25-b9f3-a8506caba502\",\"columnName\":\"Column 3\",\"columnKey\":\"5a57c\",\"columnWidth\":\"1\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "id" : "8a27768d-b64b-47ee-8701-9bc23974d031",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "allowpastshifts" : true,
+                "contactid" : "{!contactid}",
+                "dashboardHeader" : "Volunteer Dashboard",
+                "tabFive" : "Report Hours",
+                "tabFour" : "Shift Calendar",
+                "tabOne" : "How are you tracking?",
+                "tabSeven" : "Sign Up as New Volunteer",
+                "tabSix" : "Volunteer Lookup",
+                "tabThree" : "Shift History",
+                "tabTwo" : "Scheduled Shift"
+              },
+              "definition" : "c:volunteerDetails",
+              "id" : "4eda97a6-7500-46ba-b21f-3607d2ec0a32",
+              "type" : "component"
+            } ],
+            "id" : "de78a324-a7d3-4fa7-be89-02dbedf8d134",
+            "name" : "50dbf",
+            "title" : "Column 2",
+            "type" : "region"
+          }, {
+            "id" : "675c3b17-d9c4-4a25-b9f3-a8506caba502",
+            "name" : "5a57c",
+            "title" : "Column 3",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "0bce6949-c358-48bd-8566-c0ba4521fd19",
+          "scopedBrandingSetId" : "V4S",
+          "type" : "component"
+        } ],
+        "id" : "709985b5-3c39-4381-bde6-2875c66b052b",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Home",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "0cc2de97-0dbf-405f-9260-61b47c9274b4",
+          "type" : "component"
+        } ],
+        "id" : "a0ba8609-174b-40c8-891c-ed43e74d797a",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "aa48e7df-087a-4550-a166-85c6ac659ff3",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "home"
+  }
+}
